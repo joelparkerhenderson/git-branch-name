@@ -2,7 +2,6 @@
 
 This page has git branch name ideas that we've gathered. We welcome feedback.
 
-
 ## Git branch naming conventions
 
 
@@ -46,41 +45,4 @@ Benefits: easy to see time ranges, group them, and also expire them after enough
 Use a slash "/" to simulate a directory. Git branch names do not use directories, and many git clients and sites ignore the slash.
 
 Benefits: if you use a git GUI client that treats a slash "/" as a directory separator, then you may enjoy this kind of organization.
-
-
-## Git branch edit description
-
-To add more information to a branch, we edit the branch description, for example to say the purpose of the branch, or contact information for the maintainers, or links to issue tracker items.
-
-To edit a branch description:
-
-```sh
-git branch --edit-description
-```
-
-To see a branch description:
-
-```sh
-git config branch.<name>.description
-```
-
-To set a branch description to one line:
-
-```sh
-git config branch.<name>.description "This is an example description"
-```
-
-
-## See also
-
-* [Git commit message](https://github.com/joelparkerhenderson/git_commit_message)
-
-* [A successful git branching model by Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/)
-
-* [How to organize your git branches by Darío Kondratiuk](https://dev.to/hardkoded/how-to-organize-your-git-branches-4dci)
-
-
-TODO:
-
-* [What are some examples of commonly used practices for naming git branches?](https://stackoverflow.com/questions/273695/what-are-some-examples-of-commonly-used-practices-for-naming-git-branches)
 
