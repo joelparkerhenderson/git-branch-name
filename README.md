@@ -12,6 +12,7 @@ Contents:
   * [Date-time stamp](#date-time-stamp)
   * [Slash separator](#slash-separator)
 * [Git branch edit description](#git-branch-edit-description)
+  * [Git alias](#git-alias)
 * [See also](#see-also)
 
 
@@ -80,6 +81,36 @@ To set a branch description to one line:
 
 ```sh
 git config branch.<name>.description "This is an example description"
+```
+
+
+### Git alias
+
+To use a git alias, edit your git config file (such as `~/.gitconfig`) and add these git aliases:
+
+
+```sh
+bd = !"git config branch.$(git rev-parse --abbrev-ref HEAD 2>/dev/null).description"
+be = branch --edit-description
+```
+
+To set the current branch description:
+
+```sh
+git bd "This is an example branch"
+```
+
+To see the current branch description:
+
+```sh
+git bd
+```
+
+To edit the current branch description:
+
+```sh
+git be
+(launches your editor)
 ```
 
 
