@@ -69,3 +69,17 @@ To set a branch description to one line:
 git config branch.<name>.description "This is an example description"
 ```
 
+
+## See also
+
+* [Git commit message](https://github.com/joelparkerhenderson/git_commit_message)
+
+* [A successful git branching model by Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/)
+
+* [How to organize your git branches by Darío Kondratiuk](https://dev.to/hardkoded/how-to-organize-your-git-branches-4dci)
+
+
+TODO:
+
+* [What are some examples of commonly used practices for naming git branches?](https://stackoverflow.com/questions/273695/what-are-some-examples-of-commonly-used-practices-for-naming-git-branches)
+
