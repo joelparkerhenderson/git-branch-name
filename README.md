@@ -2,6 +2,19 @@
 
 This page has git branch name ideas that we've gathered. We welcome feedback.
 
+Contents:
+
+* [Git branch naming conventions](#git-branch-naming-conventions)
+  * [Git commit message](#git-commit-message)
+  * [Emoji](#emoji)
+  * [Issue number](#issue-number)
+  * [Version number](#version-number)
+  * [Date-time stamp](#date-time-stamp)
+  * [Slash separator](#slash-separator)
+* [Git branch edit description](#git-branch-edit-description)
+* [See also](#see-also)
+
+
 ## Git branch naming conventions
 
 
