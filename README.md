@@ -101,7 +101,7 @@ Benefits: easy to see time ranges, group them, and also expire them after enough
 
 ### Group name
 
-Use a branch name with your own group names, for example authentication and authorization work could start with "aa", or user interface branch could start with "ui", or optimization opportunities could start with "oo".
+Use a branch name with your own group names, for example authentication/authorization could use "aa", or user interface branch could use "ui", or optimization opportunities could use "oo".
 
 Examples:
 
