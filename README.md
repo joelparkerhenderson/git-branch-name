@@ -11,6 +11,7 @@ Contents:
   * [Version number](#version-number)
   * [Date-time stamp](#date-time-stamp)
   * [Slash separator](#slash-separator)
+  * [Group names](#group-names)
 * [Git branch edit description](#git-branch-edit-description)
   * [Git alias](#git-alias)
 * [See also](#see-also)
@@ -108,6 +109,21 @@ Examples:
 * optmizations/page-speed
 
 Benefits: if you use a git GUI client that treats a slash "/" as a directory separator, then you may enjoy this kind of organization.
+
+
+### Group names
+
+Start the branch name with your own group names, for example authentication and authorization work could start with "aa", or user interface branch could start with "ui", or optimization opportunities could start with "oo".
+
+Examples:
+
+* aa-login-button
+
+* ui-table-layout
+
+* oo-page-speed
+
+Benefits: easy to cluster by subteam, for example a security team looks at "aa", a design team looks at "ui", and a performance team looks at "oo".
 
 
 ## Git branch edit description
