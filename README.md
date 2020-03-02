@@ -10,8 +10,11 @@ Contents:
   * [Issue number](#issue-number)
   * [Version number](#version-number)
   * [Date-time stamp](#date-time-stamp)
-  * [Slash separator](#slash-separator)
   * [Group names](#group-names)
+  * [Workflow prefix](#workflow-prefix)
+* [Name tokenization](#name-tokenization)
+  * [Kebab case or snake case or camel case](#kebab-case-or-snake-case-or-camel-case)
+  * [Slash separator](#slash-separator)
 * [Git branch edit description](#git-branch-edit-description)
   * [Git alias](#git-alias)
 * [See also](#see-also)
@@ -37,7 +40,7 @@ Benefits: easy to understand the purpose, easy for inter-team communications.
 
 ### Emoji
 
-Use emoji to make a branch name that's akin to an icon, colorful, and fun.
+Use a branch name with an emoji that's akin to an icon, colorful, and fun.
 
 Examples:
 
@@ -53,7 +56,7 @@ Benefits: easy to skim visually, fun for casual participants, creative.
 
 ### Issue number
 
-Start the branch name with an issue number based on your issue tracker, for example your issue tracker has issue number 100 and your branch name could be "100-foo-bar".
+Use a branch name with an issue number based on your issue tracker, for example your issue tracker has issue number 100 and your branch name could be "100-foo-bar".
 
 Examples:
 
@@ -68,7 +71,7 @@ Benefits: easy to jump between the issue tracker and the branch name.
 
 ### Version number
 
-Start the branch name with a version number, for example a branch for version 1.0.0 could be "1.0.0-foo-bar".
+Use a branch name with a version number, for example a branch for version 1.0.0 could be "1.0.0-foo-bar".
 
 Examples:
 
@@ -83,7 +86,7 @@ Benefits: easy to see version ranges, group them, and also delete them when the 
 
 ### Date-time stamp
 
-Start the branch name with a date or time, for example a branch created on January 1 2020 could be "2020-01-01-foo-bar".
+Use a branch name with a date or time, for example a branch created on January 1 2020 could be "2020-01-01-foo-bar".
 
 Examples:
 
@@ -96,9 +99,55 @@ Examples:
 Benefits: easy to see time ranges, group them, and also expire them after enough time has passed.
 
 
+### Group name
+
+Use a branch name with your own group names, for example authentication and authorization work could start with "aa", or user interface branch could start with "ui", or optimization opportunities could start with "oo".
+
+Examples:
+
+* aa-login-button
+
+* ui-table-layout
+
+* oo-page-speed
+
+Benefits: easy to cluster by subteam, for example a security team looks at "aa", a design team looks at "ui", and a performance team looks at "oo".
+
+
+### Workflow tag
+
+Use a branch name with your own workflow tag name, for example work in progress could use the tag name "wip", or a branch ready for user acceptance testing could use the tag name "uat", or a temporarly research branch could start with the tag name "tmp".
+
+Examples:
+
+* wip-login-button
+
+* uat-table-layout
+
+* tmp-page-speed
+
+Benefits: easy to understand in terms of customer delivery planning, if the teams are able to update their branch names as the branches reach various stages of delivery.
+
+
+## Name tokenization
+
+
+### Kebab case or snake case or camel case
+
+Use a branch name with kebab case which means dashes, or snake case which means underscores, or camel case which means use upper-case letters instead of a separator characters.
+
+Examples:
+
+* add-login-button (kebab case)
+
+* fix_table_layout (snake case)
+
+* optimizePageSpeed (camel case)
+
+
 ### Slash separator
 
-Use a slash "/" to simulate a directory. Git branch names do not use directories, and many git clients and sites ignore the slash.
+Use a slash "/" to simulate a directory and subdirectory.
 
 Examples:
 
@@ -110,20 +159,7 @@ Examples:
 
 Benefits: if you use a git GUI client that treats a slash "/" as a directory separator, then you may enjoy this kind of organization.
 
-
-### Group names
-
-Start the branch name with your own group names, for example authentication and authorization work could start with "aa", or user interface branch could start with "ui", or optimization opportunities could start with "oo".
-
-Examples:
-
-* aa-login-button
-
-* ui-table-layout
-
-* oo-page-speed
-
-Benefits: easy to cluster by subteam, for example a security team looks at "aa", a design team looks at "ui", and a performance team looks at "oo".
+Caveats: Git branch names do not use directories, and many git clients and sites ignore the slash. Branches are implemented as paths, so you cannot have a branch named "foo" and another branch named "foo/bar".
 
 
 ## Git branch edit description
