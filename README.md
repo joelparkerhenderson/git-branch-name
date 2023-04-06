@@ -29,11 +29,11 @@ Use direct imperative text, akin to a git commit message, that says what the bra
 
 Examples:
 
-* add-login-button
+* add-help-button
 
-* fix-table-layout
+* fix-page-layout
 
-* optimize-page-speed
+* optimize-search-speed
 
 Benefits: easy to understand the purpose, easy for inter-team communications.
 
